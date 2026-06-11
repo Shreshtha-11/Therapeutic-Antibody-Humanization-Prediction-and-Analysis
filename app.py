@@ -3,7 +3,7 @@ import joblib
 
 from utils import *
 
-with open("/content/drive/MyDrive/Projects/IGEM Summer 2026/Therapeutic Antibody Humanization Prediction /model.pkl", "rb") as f:
+with open(".\outputs\model.pkl", "rb") as f:
     model = joblib.load(f)
 
 from predictor import (
@@ -156,6 +156,20 @@ FR1 is the strongest framework region.
 Key hotspot positions:
 12, 14, 19, 20, 21
 """)
+report_text = """
+Antibody Humanization Report
+
+Full Model Accuracy: 98.25%
+Framework Only Accuracy: 96.50%
+CDR Only Accuracy: 79.50%
+
+Top FR1 Hotspots:
+12
+14
+19
+20
+21
+"""
 st.download_button(
     "Download Humanization Report",
     report_text,

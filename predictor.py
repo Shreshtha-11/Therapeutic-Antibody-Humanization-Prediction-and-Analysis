@@ -2,7 +2,7 @@ from collections import Counter
 import pandas as pd
 import joblib
 
-model = joblib.load("model.pkl")
+model = joblib.load(".\outputs\model.pkl")
 
 AMINO_ACIDS = list(
     "ACDEFGHIKLMNPQRSTVWY"
