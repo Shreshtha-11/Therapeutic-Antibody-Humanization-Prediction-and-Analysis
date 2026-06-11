@@ -42,39 +42,4 @@ def get_regions(seq):
         "FR4": str(chain.fr4_seq)
     }
 
-#Mutation Engine
-HOTSPOTS = {
-    12:"T",
-    14:"T",
-    19:"L",
-    20:"S",
-    21:"C"
-}
-
-def suggest_mutations(seq):
-
-    regions = get_regions(seq)
-
-    fr1 = regions["FR1"]
-
-    suggestions = []
-
-    for pos,target in HOTSPOTS.items():
-
-        if pos >= len(fr1):
-            continue
-
-        current = fr1[pos]
-
-        if current != target:
-
-            suggestions.append({
-                "Position":pos,
-                "Current":current,
-                "Suggested":target
-            })
-
-    return suggestions
-
-
 

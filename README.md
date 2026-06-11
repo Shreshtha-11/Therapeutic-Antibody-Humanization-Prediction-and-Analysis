@@ -1,6 +1,6 @@
 # 🧬 Antibody Humanization Platform
 
-An end-to-end computational immunology platform for antibody humanization prediction, framework region analysis, and mutation recommendation.
+An end-to-end computational immunology platform for antibody humanization prediction and framework region analysis.
 
 This project combines machine learning, antibody sequence analysis, and immunoinformatics to identify humanization signals in antibody sequences and recommend potential humanization mutations.
 
@@ -32,14 +32,10 @@ Determines which antibody regions contribute most to humanization prediction.
 ### 4. Hotspot Discovery
 Identifies important framework positions associated with species-specific signatures.
 
-### 5. Mutation Recommendation Engine
-Suggests humanization-oriented mutations based on discovered framework hotspots.
-
-### 6. Interactive Streamlit App
+### 5. Interactive Streamlit App
 Provides:
 - Humanization scoring
 - Region extraction
-- Mutation suggestions
 - Research findings visualization
 
 ---
@@ -114,8 +110,6 @@ Humanization Score
 Framework Analysis
         ↓
 FR1 Hotspot Discovery
-        ↓
-Mutation Recommendations
 ```
 
 ---
@@ -139,7 +133,6 @@ IGEM PROJECT/
 │
 ├── 01_Humanization_Classifier.ipynb
 ├── 02_CDR_Framework_Analysis.ipynb
-├── 03_Mutation_Recommendation_Engine.ipynb
 │
 ├── app.py
 ├── predictor.py
@@ -186,14 +179,6 @@ cdr_framework_analysis.csv
 
 ---
 
-## Notebook 3 – Mutation Recommendation Engine
-
-- Humanization hotspot integration
-- FR1 analysis
-- Mutation suggestion generation
-- Humanization-guided engineering recommendations
-
----
 
 # 💻 Installation
 
@@ -244,12 +229,12 @@ This project demonstrates that:
 - Framework regions contribute more strongly to humanization than CDRs.
 - FR1 contains highly informative species-specific signatures.
 - Machine learning can identify potential humanization hotspots.
-- These hotspots can be used to generate mutation recommendations.
 
 ---
 
 # 🎯 Future Work
 
+- Mutation Suggestion from Hotspots
 - AntiBERTa embeddings
 - ESM2 protein language models
 - Structural validation with ColabFold

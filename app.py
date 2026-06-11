@@ -106,21 +106,7 @@ if page == "Region Analysis":
                 f"**{k}** : {v}"
             )
 
-#Module 3: Mutation Recommendations
-if page == "Mutation Recommendations":
-
-    seq = st.text_area(
-        "Sequence"
-    )
-
-    if st.button("Generate Suggestions"):
-
-        suggestions = suggest_mutations(seq)
-
-        st.dataframe(
-            suggestions
-        )
-#Module 4: Research Findings
+#Module 3: Research Findings
 st.subheader(
     "Framework Region Performance"
 )
