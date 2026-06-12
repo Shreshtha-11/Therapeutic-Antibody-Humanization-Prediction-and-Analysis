@@ -65,7 +65,6 @@ page = st.sidebar.radio(
     [
         "Humanization Score",
         "Region Analysis",
-        "Mutation Recommendations",
         "Research Findings"
     ]
 )
